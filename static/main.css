@@ -7,7 +7,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+p{
+    display: flex;
+}
+
 code {
+    
+    flex-wrap: wrap;
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
 }
@@ -38,8 +44,21 @@ code {
 
 .heart {
     color: #ff0000;
+    padding: 4px;
+    
 }
 
 .small {
     font-size: 0.75rem;
 }
+
+@media  screen and (min-width : 640px){
+    p{
+        display: flex;
+    }
+    code{
+        flex-wrap: wrap;
+    }
+}
+    
+
